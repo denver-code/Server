@@ -1,4 +1,4 @@
-# ServerSocket DNP
+# ServerSocket DNP 0.1
 Python socket server   
 Используйте для управления сетью
 Функции которые есть сейчас:
