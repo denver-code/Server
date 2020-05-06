@@ -1,5 +1,5 @@
 # ServerSocket DNP
-Python socket server
+Python socket server   
 Используйте для управления сетью
 Функции которые есть сейчас:
 -Система логов
