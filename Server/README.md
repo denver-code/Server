@@ -11,6 +11,6 @@ Python socket server
 # How to install
 Для установки
 Скачиваем файлы на сервер и запускаем server.py
-# python3 server.py
+python3 server.py
 После на пк клиента 
-#python3 /Client/client.py
+python3 /Client/client.py
