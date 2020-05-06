@@ -1,2 +1,16 @@
 # ServerSocket DNP
- ServerSocket DNP
+Python socket server
+Используйте для управления сетью
+Функции которые есть сейчас:
+-Система логов
+-Создание HTTP Сервера
+-Сбор и анализ ip mac hostname
+-Вывод времени
+-Очистка лога 
+-И авто перезагрузка после выхода из терминала пользователя
+# How to install
+Для установки
+Скачиваем файлы на сервер и запускаем server.py
+# python3 server.py
+После на пк клиента 
+#python3 /Client/client.py
