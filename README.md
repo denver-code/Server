@@ -1,20 +1,21 @@
-# Product Name
-> Short blurb about what your product does.
+# Python decentralized network
+> App for manage network.
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
-One to two paragraph statement about your product and what it does.
-
-![](header.png)
+App can execute/create/run/delete web-server based in http protocol.
+App can create/remove file.
+App can transher file.
+App work in lan-net.
 
 ## Installation
 
-OS X & Linux:
+Linux:
 
-```sh
-npm install my-crazy-module --save
+```git clone https://github.com/Xaos12345/Server.git
+   
 ```
 
 Windows:
