@@ -8,8 +8,9 @@ import uuid
 import psutil
 from time import sleep
 import webbrowser
+import subprocess
 #Debug sector
-DEBUG = 1
+DEBUG = 0
 #Take info from os
 def sysinfo():
     ip = socket.gethostbyname(socket.gethostname())
@@ -35,8 +36,11 @@ if DEBUG == 1:
     HOST = '192.168.1.110'
 else:
     ipadd = str(input('Enter Server ip:'))
+    mips = open('sip.txt','w')
+    mips.write(str(ipadd))
+    mips.close()
     HOST = ipadd
-PORT = 50007
+PORT = 22589
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.connect((HOST, PORT))
     s.sendall(str('H:').encode()+(socket.gethostname()).encode())
@@ -47,6 +51,9 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     print('Type /exit to exit')
     while 4 != 5:
         send_data = str(input('Command:'))
+        if send_data == 'send web':
+            s.sendall('webpage'.encode())
+            pro = subprocess.Popen(['python','cl.py'])
         if send_data == 'clear':
             if platform.system() == 'Windows':
                 os.system('cls')

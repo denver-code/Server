@@ -2,22 +2,26 @@
 print('Start a new server!')
 import socket
 import os
-import datetime
 from time import sleep
-from datetime import date
-from datetime import datetime
+import datetime
+from datetime import date,datetime
 import  subprocess
 DEBUG = 1
-g = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-g.connect(("gmail.com",80))
-print(g.getsockname()[0])
-ssdd = g.getsockname()[0]
-g.close()
+if DEBUG == 1:
+    g = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    g.connect(("gmail.com",80))
+    print(g.getsockname()[0])
+    ssdd = g.getsockname()[0]
+    g.close()
 ips = socket.gethostbyname(socket.gethostname())
 today = datetime.time(datetime.now())
 timel = date.today()
 log = ('log'+str(timel)+'.log')
 print('Log file:',log)
+ipfile = open('values/mip.txt','w')
+ipfile.write(str(ssdd))
+ipfile.close()
+print('Ip writed to file!'+str(ssdd))
 try:
     os.mkdir('log')
     os.mkdir('utilites')
@@ -28,7 +32,7 @@ if DEBUG == 1:
 else:
     ipadd = str(input('Enter Your ip:'))
     HOST = ipadd
-PORT = 50007
+PORT = 22589
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.bind((HOST, PORT))
     s.listen(10)
@@ -68,6 +72,13 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                 logw = open('log/'+log,'a')
                 logw.write(('Platform:'+str(platform.decode())+str('\n')))
                 logw.close()
+                #Recive index.html
+            elif data == b'webpage':
+                logw = open('log/'+log,'a')
+                logw.write(('User want recive index.html\n'))
+                logw.close()
+                g = subprocess.Popen(['python3','values/recive.py'])
+                conn.sendall('Complete file started!Go to ip/www/'.encode())
                 #LOG VIEW
             elif data == b'logw':
                 logw = open('log/'+log,'a')
@@ -102,7 +113,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                 server.write(serverscr)
                 scrb.close()
                 server.close()
-                pro = subprocess.Popen(['python3', ' /utilites/server.py'])
+                pro = subprocess.Popen(['python3','utilites/server.py'])
                 #subprocess.Popen(['python -m SimpleHTTPServer 8000'])
                 #os.system('python -m SimpleHTTPServer 8000')
                 conn.sendall(str('SCI:'+HOST).encode())
@@ -125,7 +136,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                     logw = open('log/'+log,'a')
                     logw.write(('User want start existing server\n'))
                     logw.close()
-                    pro = subprocess.Popen(['python3', 'utilites/server.py'])
+                    pro = subprocess.Popen(['python3','utilites/server.py'])
                     conn.sendall(str('Server created!').encode())
                 except FileNotFoundError:
                     logw = open('log/'+log,'a')
