@@ -42,11 +42,11 @@ _WWW folder to host web-page_
 ## Release History
 * 0.1.0
     * The first proper release  
-    *Fix bugs  
-    *Added www folder and transfer index.html
+    * Fix bugs  
+    * Added www folder and transfer index.html  
 * 0.0.1
-    * Work in progress
-    *Added basic command
+    * Work in progress  
+    * Added basic command
 
 ## Meta
 
