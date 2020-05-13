@@ -54,6 +54,9 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         if send_data == 'send web':
             s.sendall('webpage'.encode())
             pro = subprocess.Popen(['python','cl.py'])
+        if send_data == 'send file':
+            s.sendall('recivefile'.encode())
+            pro = subprocess.Popen(['python','sendfile.py'])
         if send_data == 'clear':
             if platform.system() == 'Windows':
                 os.system('cls')
