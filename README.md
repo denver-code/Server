@@ -35,29 +35,27 @@ _Run client
 [ImageWindows](https://github.com/Xaos12345/Server/blob/master/imagegit/runclient.PNG)  
 _Enter are command create server_
 [Image](https://github.com/Xaos12345/Server/blob/master/imagegit/typecreateserver.PNG)  
-_Open in webbrowser page http://ip:8000_
+_Open in webbrowser page ```http://ip:8000```_
 [Image](https://github.com/Xaos12345/Server/blob/master/imagegit/easewebserver.PNG)  
 _WWW folder to host web-page_
 [Image](https://github.com/Xaos12345/Server/blob/master/imagegit/wwwtowebserver.PNG)  
 ## Development setup
-
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
-
-```sh
-make install
-npm test
+Install requirements.txt only!
+```pip install -r requirements.txt
 ```
 
 ## Release History
 * 0.1.0
     * The first proper release
-    * CHANGE: Rename `foo()` to `bar()`
+    *Fix bugs
+    *Added www folder and transfer index.html
 * 0.0.1
     * Work in progress
+    *Added basic command
 
 ## Meta
 
-Your Name – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
+Igorek's – [@Igoreks3](https://twitter.com/Igoreks3) – csigorek@gmail.com
 
 Distributed under the XYZ license. See ``LICENSE`` for more information.
 
