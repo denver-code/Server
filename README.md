@@ -28,11 +28,17 @@ Windows:
 ```
 
 ## Usage example
-
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
-
-_For more examples and usage, please refer to the [Wiki][wiki]._
-
+One example:
+_Run server_
+[ImageLinux](https://github.com/Xaos12345/Server/blob/master/imagegit/runserver.PNG)
+_Run client
+[ImageWindows://github.com/Xaos12345/Server/blob/master/imagegit/runclient.PNG)
+_Enter are command create server_
+[Image](https://github.com/Xaos12345/Server/blob/master/imagegit/typecreateserver.PNG)
+_Open in webbrowser page http://ip:8000_
+[Image](https://github.com/Xaos12345/Server/blob/master/imagegit/easewebserver.PNG)
+_WWW folder to host web-page_
+[Image](https://github.com/Xaos12345/Server/blob/master/imagegit/wwwtowebserver.PNG)
 ## Development setup
 
 Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
@@ -43,14 +49,6 @@ npm test
 ```
 
 ## Release History
-
-* 0.2.1
-    * CHANGE: Update docs (module code remains unchanged)
-* 0.2.0
-    * CHANGE: Remove `setDefaultXYZ()`
-    * ADD: Add `init()`
-* 0.1.1
-    * FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
 * 0.1.0
     * The first proper release
     * CHANGE: Rename `foo()` to `bar()`
