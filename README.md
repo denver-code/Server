@@ -28,7 +28,7 @@ Windows:
 ```
 
 ## Usage example
-One example:
+One example:  
 _Run server_
 [ImageLinux](https://github.com/Xaos12345/Server/blob/master/imagegit/runserver.PNG)
 _Run client
@@ -39,11 +39,6 @@ _Open in webbrowser page ```http://ip:8000```_
 [Image](https://github.com/Xaos12345/Server/blob/master/imagegit/easewebserver.PNG)  
 _WWW folder to host web-page_
 [Image](https://github.com/Xaos12345/Server/blob/master/imagegit/wwwtowebserver.PNG)  
-## Development setup
-Install requirements.txt only!
-```pip install -r requirements.txt
-```
-
 ## Release History
 * 0.1.0
     * The first proper release
@@ -56,11 +51,6 @@ Install requirements.txt only!
 ## Meta
 
 Igorek's – [@Igoreks3](https://twitter.com/Igoreks3) – csigorek@gmail.com
-
-Distributed under the XYZ license. See ``LICENSE`` for more information.
-
-[https://github.com/yourname/github-link](https://github.com/dbader/)
-
 ## Contributing
 
 1. Fork it (<https://github.com/yourname/yourproject/fork>)
