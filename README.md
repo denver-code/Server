@@ -29,9 +29,9 @@ Windows:
 
 ## Usage example
 One example:
-_Run server_  
+_Run server_
 [ImageLinux](https://github.com/Xaos12345/Server/blob/master/imagegit/runserver.PNG)
-_Run client  
+_Run client
 [ImageWindows](https://github.com/Xaos12345/Server/blob/master/imagegit/runclient.PNG)  
 _Enter are command create server_
 [Image](https://github.com/Xaos12345/Server/blob/master/imagegit/typecreateserver.PNG)  
