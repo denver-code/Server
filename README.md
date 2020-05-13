@@ -14,10 +14,10 @@ App work in lan-net.
 
 Linux:
 
-```git clone https://github.com/Xaos12345/Server.git
-   cd Server/Server/
-   pip install -r requirements.txt
-   python3 server.py
+```Download git-repo - git clone https://github.com/Xaos12345/Server.git
+   Go to folder server - cd Server/Server/
+   Install requirements - pip install -r requirements.txt
+   Run server - python3 server.py
 ```
 
 Windows:
