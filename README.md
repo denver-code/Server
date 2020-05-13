@@ -29,16 +29,16 @@ Windows:
 
 ## Usage example
 One example:
-_Run server_
+_Run server_  
 [ImageLinux](https://github.com/Xaos12345/Server/blob/master/imagegit/runserver.PNG)
-_Run client
-[ImageWindows://github.com/Xaos12345/Server/blob/master/imagegit/runclient.PNG)
+_Run client  
+[ImageWindows](https://github.com/Xaos12345/Server/blob/master/imagegit/runclient.PNG)  
 _Enter are command create server_
-[Image](https://github.com/Xaos12345/Server/blob/master/imagegit/typecreateserver.PNG)
+[Image](https://github.com/Xaos12345/Server/blob/master/imagegit/typecreateserver.PNG)  
 _Open in webbrowser page http://ip:8000_
-[Image](https://github.com/Xaos12345/Server/blob/master/imagegit/easewebserver.PNG)
+[Image](https://github.com/Xaos12345/Server/blob/master/imagegit/easewebserver.PNG)  
 _WWW folder to host web-page_
-[Image](https://github.com/Xaos12345/Server/blob/master/imagegit/wwwtowebserver.PNG)
+[Image](https://github.com/Xaos12345/Server/blob/master/imagegit/wwwtowebserver.PNG)  
 ## Development setup
 
 Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
