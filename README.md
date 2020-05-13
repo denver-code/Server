@@ -8,7 +8,7 @@
 App can execute/create/run/delete web-server based in http protocol.
 App can create/remove file.
 App can transher file.
-App work in lan-net.
+App work in lan-netWORK.
 
 ## Installation
 
