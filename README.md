@@ -41,8 +41,8 @@ _WWW folder to host web-page_
 [Image](https://github.com/Xaos12345/Server/blob/master/imagegit/wwwtowebserver.PNG)  
 ## Release History
 * 0.1.0
-    * The first proper release
-    *Fix bugs
+    * The first proper release  
+    *Fix bugs  
     *Added www folder and transfer index.html
 * 0.0.1
     * Work in progress
