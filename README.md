@@ -15,13 +15,16 @@ App work in lan-net.
 Linux:
 
 ```git clone https://github.com/Xaos12345/Server.git
-   
+   cd Server/Server/
+   pip install -r requirements.txt
+   python3 server.py
 ```
 
 Windows:
 
-```sh
-edit autoexec.bat
+```Download git-repo and extract to your place and go to folder Server/Client/
+   Open cmd.exe and go to Client folder >> type 'pip install -r requirements.txt'
+   And run script 'python client.py'
 ```
 
 ## Usage example
