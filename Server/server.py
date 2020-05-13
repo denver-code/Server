@@ -228,7 +228,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             #Top secret
             elif data == b'h4nb3u8':
                 h4nb3u8()
-            elif data == b'help321':
+           # elif data == b'help321':
                 #Always Pass =)
             else:
                 #conn.sendall('Incorrect command!'.encode())
