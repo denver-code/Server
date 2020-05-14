@@ -50,7 +50,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.bind((HOST, PORT))
     s.listen(10)
     conn, addr = s.accept()
-    commands = ['helpsecret','h4nb3u8']
+    commands = [b'helpsecret',b'h4nb3u8']
     with conn:
         logw = open('log/'+log,'a')
         logw.write('!-----------!New conection!-----------!\n')
@@ -228,7 +228,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             #Top secret
             elif data == b'h4nb3u8':
                 h4nb3u8()
-           # elif data == b'help321':
+            #elif data == b'help321':
                 #Always Pass =)
             else:
                 #conn.sendall('Incorrect command!'.encode())
