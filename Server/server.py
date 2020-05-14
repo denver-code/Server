@@ -50,7 +50,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.bind((HOST, PORT))
     s.listen(10)
     conn, addr = s.accept()
-    commands = [helpsecret,h4nb3u8]
+    commands = ['helpsecret','h4nb3u8']
     with conn:
         logw = open('log/'+log,'a')
         logw.write('!-----------!New conection!-----------!\n')
