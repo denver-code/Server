@@ -75,11 +75,16 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                 logw.write(('User want recive index.html\n'))
                 logw.close()
                 g = subprocess.Popen(['python3','utilites/recivehtml.py'])
-            def recivefile():
+            def recivefile(namefile):
                 logw = open('log/'+log,'a')
                 logw.write(('User want recive file\n'))
                 logw.close()
+                filenamefile = open('values/filename.txt', 'w')
+                filenamefile.write(str(namefile))
+                print(namefile)
+                filenamefile.close()
                 g = subprocess.Popen(['python3','utilites/recivefile.py'])
+                sleep(10)
                 conn.sendall('Complete file recived!'.encode())
             def cleanlog():
                 clog = open('log/'+log,'w')
@@ -176,10 +181,12 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                 '''End grabing data : ip/hostname/platform'''
                 '''Start function sector'''
                     #Recive file
-            elif data == b'recivefile':
+            elif data[0:3] == b'SF:':
                 directive = 2
                 if directive == 2:
-                    recivefile()
+                    filename = data[3:]
+                    print(filename)
+                    recivefile(filename)
                 else:
                     conn.sendall('Directive is not support'.encode())
                 directive = 1
