@@ -120,7 +120,7 @@ Twisted==19.10.0
 txaio==20.1.1
 typed-ast==1.4.0
 uncompyle6==3.6.0
-urllib3==1.19.1
+urllib3==1.24.2
 user-agent==0.1.9
 wcwidth==0.1.9
 Werkzeug==0.16.0
