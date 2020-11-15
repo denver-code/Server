@@ -48,21 +48,28 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.sendall(str('I:').encode()+(socket.gethostbyname(socket.gethostname())).encode())
     sleep(1)
     s.sendall(str('P:').encode()+(platform.machine()).encode())
+    print('Server firmware:SAUI 11.0.2.0 PEKMIXM\nUpdates not found!')
+    sleep(1)
     print('Type /exit to exit')
     while 4 != 5:
         send_data = str(input('Command:'))
         if send_data == 'send web':
             s.sendall('webpage'.encode())
             pro = subprocess.Popen(['python','cl.py'])
-        if send_data[:9] == 'send file ':
-            filename = send_data[9:]
+            print('Wait 8 secconds')
+            sleep(8)
+            pro.kill()
+        elif send_data[:9] == 'send file':
+            filename = send_data[10:]
             filen = open('filename.txt', 'w')
             filen.write(str(filename))
             filen.close()
-            s.sendall(('SF:'+str(filename)).encode())
-            pro = subprocess.Popen(['python','sendfile.py'])
-            sleep(5)
-        if send_data == 'clear':
+            if platform.system() == 'Windows':
+                pro = subprocess.Popen(['python','sendfile.py'])
+            else:
+                pro = subprocess.Popen(['python3', 'sendfile.py'])
+            s.sendall(('SF:'+str(filename)).encode()) 
+        elif send_data == 'clear':
             if platform.system() == 'Windows':
                 os.system('cls')
             else:

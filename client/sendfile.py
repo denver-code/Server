@@ -6,12 +6,13 @@ host = str(ip)
 port = 25758
 s.connect((host, port))
 filen = open('filename.txt', 'r')
-filename = read(filen)
+filename = filen.read()
 filen.close()
 op = open(filename, 'rb')
-while (data):
+while (True):
     data = op.read(1024)
     if not data:
+        print('Complete!')
         exit()
     s.send(data)
 op.close()

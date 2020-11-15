@@ -1,0 +1,13 @@
+-send web `Transfer index.html to www folder`
+-clear `Clear terminal`
+-create server `create a new web server in folder utilites`
+-run server `run existing server.py in folder utilites.py`
+-kill server `kill web server`
+-time `print time`
+-clean log `clean a today log-file`
+-restart `restart socket server and web server`
+-send file `send file =)`
+-web-template `create web-template`
+-enable auto-restart `Enable`
+-stop auto-restart `Stop`
+-telebot filename.fileformat `Create telegram bot from source in folder Files`

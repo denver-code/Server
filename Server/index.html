@@ -1,16 +1,63 @@
 <html>
- <head><title>Main page server</title></head>   
+ <head><title>Main page server</title></head>
     <body>
      <style type="text/css">
+     @font-face {
+      font-family: "Oswald-med";
+      src: url("fontweb/Oswald/Oswald-Medium.ttf");
+     }
+     html{
+       padding: 0;
+       margin: 0;
+       font-family: Oswald-med;
+     }
+     *{
+       padding: 0;
+       margin: 0;
+     }
      a{
       text-decoration:none;
       font-size:25pt;
       margin:20px;
+      color:darkblue;
+     }
+     footer{
+       width: 100%;
+       height: 80px;
+       background-color: black;
+       color:white;
+       position: absolute;
+       margin-top: 166px;
      }
      </style>
-     <center><h1>Folders</h1></center>
-        <a href='log/'>Log folder</a>
-        <a href='values/'>Value folder</a>
-        <a href='Files/'>Files folder</a>
-    </body>
+     <div class="Folders">
+       <h1>-Folders:</h1>
+       <ul>
+         <li><a href='log/'>Log folder</a><br></li>
+         <!--<li><a href='values/'>Value folder</a><br></li>-->
+         <li><a href='File/'>Files folder</a><br></li>
+         <li><a href='#'>#Temp : Null</a><br></li>
+       </ul>
+      </body>
+      <div class="Values">
+        <h1>-Values:</h1>
+        <ul>
+          <li><a href='values/credits.txt'>Credits</a><br></li>
+          <li><a href='values/server.txt'>Server http code</a><br></li>
+          <li><a href='values/web.txt'>Web-template code</a><br></li>
+          <li><a href='values/commands.txt'>Commands</a><br></li>
+        </ul>
+     </div>
+     <div class="Manuals">
+       <h1>-Manuals:</h1>
+       <ul>
+         <li><a href='manual/bugreport.txt'>Report BUG</a><br></li>
+         <li><a href='manual/createwebserver.txt'>How create web-server</a><br></li>
+         <li><a href='manual/firstconnection.txt'>First Connect</a><br></li>
+         <li><a href='manual/setupserver.txt'>How to setup server</a><br></li>
+         <li><a href='manual/startserver.txt'>How to start server</a><br></li>
+       </ul>
+    </div>
+    <footer><center><h1>Created by Igorek's Savenko!</h1></center></footer>
+     </body>
 </html>
